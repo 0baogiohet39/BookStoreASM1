@@ -46,5 +46,6 @@ app.MapControllerRoute(
 app.MapRazorPages();
 
 /*SeedData.EnsurePopulated(app);*/
+//Test Commit
 
 app.Run();
