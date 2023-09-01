@@ -18,6 +18,13 @@
                 <span asp-validation-for="Input.Email" class="text-danger"></span>
             </div>
 
+            @*Roles*@
+            <div class="form-floating mb-3">
+                @Html.DropDownList("Input.Role", new SelectList(Model.Roles, "Name", "Name"), new { @class = "form-control"})
+                <label asp-for="Input.Role">Role</label>
+                <span asp-validation-for="Input.Role" class="text-danger"></span>
+            </div>
+
             @*Add UCN - FullName*@
             <div class="form-floating mb-3">
                 <input asp-for="Input.UCN" class="form-control" autocomplete="on" aria-required="true" placeholder="UCN" />

@@ -32,14 +32,14 @@
                                 @if (User.Identity.IsAuthenticated)
                                 {
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark" asp-area="" asp-controller="Books" asp-action="Index">Book list</a>
+                                        <a class="nav-link text-dark" asp-area="" asp-controller="Books" asp-action="Index">Book Manager</a>
                                     </li>
                                 }
 
                         @if (User.IsInRole("Admin"))
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="ListAllRoles">Roles</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="AppRoles" asp-action="Index">Role Manager</a>
                             </li>
                         }
                     </ul>
