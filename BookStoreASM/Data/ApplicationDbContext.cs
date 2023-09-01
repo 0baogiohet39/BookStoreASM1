@@ -12,6 +12,7 @@ namespace BookStoreASM.Data
         }
 
         public DbSet<BookStoreASM.Models.Book> Book { get; set; } = default!;
+
         public DbSet<CartItem> CartItems { get; set; }
     }
 }

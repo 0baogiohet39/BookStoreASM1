@@ -19,8 +19,11 @@ builder.Services.AddControllersWithViews();
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<BookStoreContext>();*/
 
-/*builder.Services.AddRazorPages();*/
+builder.Services.AddRazorPages();
+
+//Get cart and ordercart
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
 builder.Services.AddScoped<Cart>(sp => Cart.GetCart(sp));
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
