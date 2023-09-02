@@ -17,7 +17,7 @@ namespace BookStoreASM.Data
 
         public DbSet<BookStoreASM.Models.ApplicationRole> ApplicationRole { get; set; } = default!;
 
-        public DbSet<Order> Order { get; set; }
+        public DbSet<Order> Orders { get; set; }
 
         public DbSet<OrderItem> OrderItems { get; set; }
     }
