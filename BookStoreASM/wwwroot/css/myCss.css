@@ -37,6 +37,6 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 
-/*.card-img, .card-img-bottom, .card-img-top {
-    height:200px;
-}*/
+.card-img, .card-img-bottom, .card-img-top {
+    height:250px;
+}
